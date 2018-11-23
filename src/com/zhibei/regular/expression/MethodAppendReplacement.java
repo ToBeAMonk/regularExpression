@@ -8,7 +8,7 @@ import java.util.regex.Pattern;
 public class MethodAppendReplacement {
 	public static void main(String[] args) throws Exception {
 		Map<String, String> htmlPreHandleMap = new HashMap<String, String>();
-		// 生成 Pattern 对象并且编译一个简单的正则表达式"cat"
+		// 生成 Pattern 对象并且编译一个简单的正则表达式"c.{2}"，其匹配字符串中的cat
 		Pattern p = Pattern.compile("c.{2}");
 		// 用 Pattern 类的 matcher() 方法生成一个 Matcher 对象
 		Matcher m = p.matcher("fatcatfatcatfatfatfatcatfat");
@@ -31,5 +31,6 @@ public class MethodAppendReplacement {
 			String str = htmlPreHandleMap.get(in);//得到每个key多对用value的值
 			System.out.println(in + "     " + str);
 		}
+		//从打印结果中可以看出来，这里的集合中存储的是替换过得key 是{dog0} {dog1} value是cat
 	}
 }
