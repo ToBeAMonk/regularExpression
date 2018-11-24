@@ -2,7 +2,11 @@ package com.zhibei.regular.expression;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
+/**
+ * 空格是可以出现在正则表达式中的，不一定非要用\s
+ * @author Administrator
+ *
+ */
 public class TheBlankSpace {
 	public static void main(String[] args) {
 		//带有空格的字符串

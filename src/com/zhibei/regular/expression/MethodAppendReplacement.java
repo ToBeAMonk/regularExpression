@@ -11,7 +11,7 @@ public class MethodAppendReplacement {
 		// 生成 Pattern 对象并且编译一个简单的正则表达式"c.{2}"，其匹配字符串中的cat
 		Pattern p = Pattern.compile("c.{2}");
 		// 用 Pattern 类的 matcher() 方法生成一个 Matcher 对象
-		Matcher m = p.matcher("fatcatfatcatfatfatfatcatfat");
+		Matcher m = p.matcher("fatcatfatcbtfatfatfatcctfat");
 		StringBuffer sb = new StringBuffer();
 		int i =0;
 		while(m.find()){

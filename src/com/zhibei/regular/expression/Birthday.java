@@ -18,4 +18,5 @@ public class Birthday {
 			System.out.println(string);
 		}
 	}
+	//result:   1992-02-28   这个表达式匹配平年和闰年中的任意一天
 }

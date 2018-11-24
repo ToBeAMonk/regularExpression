@@ -8,14 +8,14 @@ import java.util.regex.Pattern;
  * @author Administrator
  *
  */
-public class PatternXS {
+public class PatternXiuShiFu {
 	public static void main(String[] args) {
 		/*
-		 * 
+		 * (?i)的结合意思是忽略大小写
 		 */
 		String str="AbC";
 //		String pattern="(?i)abc";
-		String pattern="(?i)abc";
+		String pattern="(?i)abc";//
 		Pattern p=Pattern.compile(pattern);
 		Matcher m=p.matcher(str);
 		while(m.find()) {

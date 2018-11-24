@@ -4,7 +4,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 /**
  *总结：
- *1.出现?=  不一定是正向预查
+ *1.出现?=  不一定是正向预查   应该是只有被括号括起来的才是。。。个人理解
  *2.需要真正理解每一个字符的含意，比如*   这个字符也是可以匹配前面的表达式的。
  * @author Administrator
  *

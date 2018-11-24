@@ -3,7 +3,7 @@ package com.zhibei.regular.expression;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 /**
- * 注册匹配
+ * 注册名匹配
  * @author Administrator
  *
  */

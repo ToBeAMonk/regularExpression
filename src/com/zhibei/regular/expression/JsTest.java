@@ -2,7 +2,11 @@ package com.zhibei.regular.expression;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
+/**
+ * 
+ * @author Administrator
+ *
+ */
 public class JsTest {
 	public static void main(String[] args) {
 		String string="._v(\")hello";

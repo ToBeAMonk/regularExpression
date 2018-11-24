@@ -3,7 +3,7 @@ package com.zhibei.regular.expression;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class UseGhd {
+public class Group {
 	public static void main(String[] args) {
 		//(?<=(href=")).{1,200}(?=(">))
 		String s="<br/>您好，非常好，很开心认识你\r\n" + 
@@ -22,16 +22,15 @@ public class UseGhd {
 //			System.out.println(m.group(2));
 		}
 		String s1="dog";
-		String pattern1="((.)(.(.)))";
+		String pattern1="(.)(.(.))";
 		Pattern p1=Pattern.compile(pattern1);
 		Matcher m1=p1.matcher(s1);
 		while(m1.find()) {
 			//System.out.println(m);
-			System.out.println(m1.group(0));
-			System.out.println(m1.group(1));
-			System.out.println(m1.group(2));
-			System.out.println(m1.group(3));
-			System.out.println(m1.group(4));
+			System.out.println(m1.group(0));//第一组(.)(.(.)) dog
+			System.out.println(m1.group(1));//第二组(.)  d
+			System.out.println(m1.group(2));//第三组(.(.)) og
+			System.out.println(m1.group(3));//第四组(.(.))里面的(.)  g
 		}
 		
 	}
